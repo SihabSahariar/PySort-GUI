@@ -1,5 +1,10 @@
 # PySort GUI
 A Python GUI program that visualize different sorting algorithms and shuffling algorithm. Inspired by [Clément Mihailescu](https://clementmihailescu.github.io/Sorting-Visualizer/)
+```
+pip install PyQt5
+pip install matplotlib
+pip install numpy
+```
 
 ## Bubble Sort:
 Bubble sort is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order. The pass through the list is repeated until the list is sorted.
