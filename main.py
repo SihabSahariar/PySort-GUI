@@ -160,6 +160,9 @@ class MatplotlibWidget(QMainWindow):
         # Disable buttons
         self.buttons(False)
         self.status.setText("Bubble Sort Processing!")
+    
+        # Disable spin box
+        self.spnBars.setDisabled(True)
 
         # Loop through all elements
         for i in range(len(yarray)):
@@ -186,6 +189,7 @@ class MatplotlibWidget(QMainWindow):
                         self.new_frame(j+1)
 
         self.buttons(True)
+        self.spnBars.setDisabled(False)
         self.status.setText("Bubble Sort Done!")
 
 
@@ -195,6 +199,9 @@ class MatplotlibWidget(QMainWindow):
         self.status.setText("Insertion Sort Processing!")
         # Disable buttons
         self.buttons(False)
+
+        # Disable spin box
+        self.spnBars.setDisabled(True)
 
         # Loop through list
         for i in range(len(yarray)):
@@ -235,6 +242,7 @@ class MatplotlibWidget(QMainWindow):
                             break
 
         self.buttons(True)
+        self.spnBars.setDisabled(False)
         self.status.setText("Insertion Sort Done!")        
          
 
@@ -245,6 +253,9 @@ class MatplotlibWidget(QMainWindow):
         # Disable buttons
         self.buttons(False)
 
+        # Disable spin box
+        self.spnBars.setDisabled(True)
+
         yarray = self.merge_split(yarray)
 
         # Update class var
@@ -252,6 +263,7 @@ class MatplotlibWidget(QMainWindow):
         self.new_frame(0)
         
         self.buttons(True)
+        self.spnBars.setDisabled(False)
         self.status.setText("Merge Sort Done!")        
 
 
@@ -326,6 +338,9 @@ class MatplotlibWidget(QMainWindow):
         # Disable buttons
         self.buttons(False)
 
+        # Disable spin box
+        self.spnBars.setDisabled(True)
+
         # Loop through list
         for i in range(len(yarray)):
 
@@ -356,6 +371,7 @@ class MatplotlibWidget(QMainWindow):
             self.new_frame(shifter_index)
 
         self.buttons(True)
+        self.spnBars.setDisabled(False)
         self.status.setText("Selection Sort Done!")        
         
 
